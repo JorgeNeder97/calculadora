@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply font-poppins
+    }
+
+    .numberButton {
+        @apply bg-slate-300/40 border-2 rounded-lg w-24 h-16 text-3xl hover:bg-slate-300/70 transition-all duration-[.3s] ease-in-out
+    }
+
+    .operationButton {
+        @apply numberButton bg-red-600/90 border-red-600 text-white hover:bg-red-600
+    }
+}
